@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    let ano = 2022;
+    document.write("WEVERSON TEM " + (ano - 1998) + " ANOS")
+
+    let idadeFlavio = 39;
+    let idadeMarcos = 50;
+    let idadeCarlos = 20;
+
+    let media = (idadeCarlos + idadeMarcos + idadeFlavio) / 3;
+   
+    // document.write("<br> A MEDIA DE IDADE É " + Math.round(media));
+
+    mostrar("<br> A MEDIA DE IDADE É " + Math.round(media));
+    //funcoes
+    function pularLinha() {
+        let linha = "<br><br><br>";
+        document.write(linha);
+        
+    }
+
+    function mostrar(texto){
+    document.write(texto);
+     pularLinha()
+
+    }
+
+</script>

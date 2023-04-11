@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><hr>")
+    }
+
+    function mostrar(frase) {
+        document.write(frase)
+
+    }
+
+    for (let linha = 0; linha < 30; linha++) {
+        for (let coluna = 0; coluna < 30; coluna++) {
+            if (linha == coluna) {
+                mostrar("#");
+            } else if (linha == coluna + 1) {
+                mostrar(" ");
+            } else if (linha == coluna - 1) {
+                mostrar(" ");
+            } else {
+                mostrar("*");
+            }
+
+        }
+        document.write("<br>")
+    }
+
+
+
+</script>

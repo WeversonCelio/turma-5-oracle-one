@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<input />
+<button>COMPARE O MEU SEGREDO</button>
+<script>
+    var input = document.querySelector("input");
+
+
+    function gerarSegredo() {
+        return Math.round(Math.random() * 10);
+    }
+
+
+    function verificar() {
+        for (let i = 0; i < segredos.length; i++) {
+            if (input.value == segredos[i]) {
+                alert("Voce Acertou");
+                document.write("O numero sorteado no segredo "+ (i+1) +" era: " + segredos[i]);
+                break;
+            } else if((segredos.length-1)==i){
+                alert("Voce Errou");
+                input.focus();
+            }
+
+        }
+
+        input.value = "";
+
+    }
+    var segredos = [gerarSegredo(), gerarSegredo(), gerarSegredo(), gerarSegredo()];
+    var button = document.querySelector("button");
+
+    button.onclick = verificar;
+
+
+</script>
